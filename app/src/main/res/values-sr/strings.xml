@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Diner Cafe</string>
+    <string name="first_activity_name">The Diner Cafe</string>
+    <string name="second_activity_name">The Diner Cafe</string>
+    <string name="description">OPIS:</string>
+    <string name="category">KATEGORIJA:</string>
+    <string name="ingridients">SASTOJCI:</string>
+    <string name="calorie">KALORIJE:</string>
+    <string name="currency">din.</string>
+    <string name="button_order">NARUCI</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Diner Cafe</string>
+    <string name="first_activity_name">The Diner Cafe</string>
+    <string name="second_activity_name">The Diner Cafe</string>
+    <string name="description">DESCRIPTION:</string>
+    <string name="category">CATEGORY:</string>
+    <string name="ingridients">INGRIDIENTS:</string>
+    <string name="calorie">CALORIE:</string>
+    <string name="currency">$</string>
+    <string name="button_order">ORDER</string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_hotizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_hotizontal_margin"
+    android:orientation="vertical">
+
+
+    <!-- #1 slika jela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_image_jelo"
+            android:layout_width="match_parent"
+            android:layout_height="80sp" />
+
+    </LinearLayout>
+
+
+    <!-- #2 naziv jela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_name_jelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <!-- #3 Rating Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RatingBar
+            android:id="@+id/rb_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressBackgroundTint="#44444444"
+            android:progressTint="#ffd700"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:secondaryProgressTint="#000000" />
+
+    </LinearLayout>
+
+
+    <!-- #4 opis, kategorija, sastojci i kalorije jela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- opis -->
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2sp"
+            android:text="@string/description"
+            android:textSize="14sp" />
+
+        <!-- opis opisa :) -->
+        <TextView
+            android:id="@+id/tv_destription_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14sp"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <!-- kategorija -->
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2sp"
+            android:text="@string/category"
+            android:textSize="14sp" />
+
+        <!-- spiner za kategoriju -->
+        <Spinner
+            android:id="@+id/sp_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- kategorija opis -->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_category_des"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="14sp"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textStyle="italic" />-->
+
+        <!-- sastojci -->
+        <TextView
+            android:id="@+id/tv_ingridients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingridients"
+            android:textSize="14sp" />
+
+        <!-- ListView za sastojke -->
+        <ListView
+            android:id="@+id/lv_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleX=".6"
+            android:scaleY=".6" />
+
+        <!--sastojci opis-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_ingridients_des"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="14sp"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textStyle="italic" />-->
+
+        <!-- kalorije -->
+        <TextView
+            android:id="@+id/tv_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2sp"
+            android:text="@string/calorie"
+            android:textSize="14sp" />
+
+        <!-- kalorije opis -->
+        <TextView
+            android:id="@+id/tv_calorie_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14sp"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <!-- #5 cena i dugme za naručivanje   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <!-- cena -->
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+            <!-- $ -->
+            <TextView
+                android:id="@+id/tv_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                android:textSize="40sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <!-- dugme za narucivanje -->
+        <Button
+            android:id="@+id/bt_button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_order" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
