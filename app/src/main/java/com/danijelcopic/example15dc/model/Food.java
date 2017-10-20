@@ -17,13 +17,14 @@ public class Food {
     private Category category;
     private List<Ingridient> ingridients;
 
+
+    // empty constructor
     public Food() {
         this.ingridients = new ArrayList<Ingridient>();
     }
 
 
-
-
+    // full constructor
     public Food(int id, String image, String name, float rating, String description, Category category, ArrayList<Ingridient> ingridients, String calory, double price) {
         this.id = id;
         this.image = image;

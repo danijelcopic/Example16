@@ -25,8 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-
 public class SecondActivity extends Activity {
 
     private int position = 0;
@@ -62,7 +60,6 @@ public class SecondActivity extends Activity {
         TextView jeloOpis = (TextView) findViewById(R.id.tv_destription_des);
         jeloOpis.setText(com.danijelcopic.example15dc.provider.FoodProvider.getFoodById(position).getDescription());
 
-
         // spinner for category
         Spinner category = (Spinner) findViewById(R.id.sp_category);
         List<String> categories = CategoryProvider.getCategoryNames();
@@ -70,16 +67,11 @@ public class SecondActivity extends Activity {
         category.setAdapter(adapter);
         category.setSelection((int) com.danijelcopic.example15dc.provider.FoodProvider.getFoodById(position).getCategory().getId());
 
-
-
-        // ListView for ingridients ???
+        // ListView for ingridients
         List<Ingridient> ingridients = (FoodProvider.getFoodById(position).getIngridients());
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, ingridients);
         ListView listView = (ListView) findViewById(R.id.lv_list_view);
         listView.setAdapter(itemsAdapter);
-
-
-
 
         // food - calory
         TextView jeloKalorije = (TextView) findViewById(R.id.tv_calorie_des);
