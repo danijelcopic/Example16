@@ -6,7 +6,7 @@ Deo vežbi sa kursa Android Application Development koje drži http://ftninforma
 
 Ova aplikacija pokriva osnovna znanja o Linear i Relative Layout-u
 
-### Screnshoot
+### Screenshot
 
 ![device-2017-10-21-001041](https://user-images.githubusercontent.com/17581397/31843918-e8064b22-b5f5-11e7-84ba-d812497c2f4b.png), ![device-2017-10-21-001113](https://user-images.githubusercontent.com/17581397/31843927-ef073e2c-b5f5-11e7-8326-a813a813ad4d.png)
 
