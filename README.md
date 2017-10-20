@@ -1,4 +1,4 @@
-# Example17
+# Example16
 
 Deo vežbi sa kursa Android Application Development koje drži http://ftninformatika.com/
 
@@ -8,7 +8,7 @@ Ova aplikacija pokriva osnovna znanja o Linear i Relative Layout-u
 
 ### Screnshoot
 
-ActivityFirst i ActivitySecond
+
 
 ```
 Give the example
